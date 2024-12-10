@@ -1,3 +1,5 @@
+streamlit==1.12.2
+streamlit-tags==1.2.8
 altair==4.2.0
 attrs==22.1.0
 blinker==1.5
@@ -74,8 +76,6 @@ spacy==2.3.5
 spacy-legacy==3.0.10
 spacy-loggers==1.0.3
 srsly==1.0.5
-streamlit==1.12.2
-streamlit-tags==1.2.8
 tenacity==8.0.1
 thinc==7.4.5
 toml==0.10.2
