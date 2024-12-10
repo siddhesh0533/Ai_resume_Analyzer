@@ -1,4 +1,4 @@
-distutils
+setuptools==65.5.1
 streamlit==1.12.2
 streamlit-tags==1.2.8
 altair==4.2.0
@@ -92,5 +92,5 @@ validators==0.20.0
 wasabi==0.10.1
 watchdog==2.1.9
 zipp==3.8.1
-setuptools==65.5.1
+
 
