@@ -3,6 +3,7 @@
 
 ###### Packages Used ######
 import streamlit as st # core package used in this project
+import distutils.core
 import pandas as pd
 import base64, random
 import time,datetime
