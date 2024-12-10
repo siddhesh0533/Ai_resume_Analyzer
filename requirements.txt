@@ -91,3 +91,5 @@ validators==0.20.0
 wasabi==0.10.1
 watchdog==2.1.9
 zipp==3.8.1
+setuptools==65.5.1
+
