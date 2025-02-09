@@ -1,6 +1,6 @@
 # Developed by dnoobnerd [https://dnoobnerd.netlify.app]    Made with Streamlit
-
-
+import nltk
+nltk.download('stopwords')
 ###### Packages Used ######
 import streamlit as st # core package used in this project
 import distutils.core
