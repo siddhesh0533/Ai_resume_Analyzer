@@ -93,13 +93,9 @@ def course_recommender(course_list):
 
 
 # sql connector
-connection = psycopg2.connect(
-    dbname="resume_analyzer_db",
-    user="resume_analyzer_db_user",
-    password="CiH1u3owVutilnWQt68FxFeOYgjk3bVO",
-    host="dpg-cul26san91rc73b20ch0-a.oregon-postgres.render.com",
-    port="5432"
-)
+DATABASE_URL = "postgresql://resume_analyzer_db_user:CiH1u3owVutilnWQt68FxFeOYgjk3bVO@dpg-cul26san91rc73b20ch0-a.oregon-postgres.render.com/resume_analyzer_db"
+
+connection = psycopg2.connect(DATABASE_URL)
 cursor = connection.cursor()
 
 
@@ -164,8 +160,8 @@ def run():
 
 
     # Create the DB
-    db_sql = """CREATE DATABASE IF NOT EXISTS ai_resume_analyzer;"""
-    cursor.execute(db_sql)
+    # db_sql = """CREATE DATABASE IF NOT EXISTS ai_resume_analyzer;"""
+    # cursor.execute(db_sql)
 
 
     # Create table user_data and user_feedback
