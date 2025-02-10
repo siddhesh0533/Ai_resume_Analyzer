@@ -7,7 +7,7 @@ import distutils.core
 import pandas as pd
 import base64, random
 import time,datetime
-import pymysql
+import psycopg2
 import os
 import socket
 import platform
@@ -93,7 +93,13 @@ def course_recommender(course_list):
 
 
 # sql connector
-connection = pymysql.connect(host='localhost',user='root',password='',db='ai_resume_analyzer')
+connection = psycopg2.connect(
+    dbname="resume_analyzer_db",
+    user="resume_analyzer_db_user",
+    password="CiH1u3owVutilnWQt68FxFeOYgjk3bVO",
+    host="dpg-cul26san91rc73b20ch0-a.oregon-postgres.render.com",
+    port="5432"
+)
 cursor = connection.cursor()
 
 
