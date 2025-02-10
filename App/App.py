@@ -138,7 +138,7 @@ st.set_page_config(
 def run():
     
     # (Logo, Heading, Sidebar etc)
-    img = Image.open('./Logo/AI RESUME ANALYZER.png')
+    img = Image.open('App/Logo/AI RESUME ANALYZER.png')
     st.image(img)
     st.sidebar.markdown("# Choose Something...")
     activities = ["User", "Feedback", "About", "Admin"]
