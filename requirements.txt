@@ -58,6 +58,8 @@ pydeck==0.8.0b1
 Pygments==2.13.0
 Pympler==1.0.1
 PyMySQL==1.0.2
+psycopg2-binary
+sqlalchemy
 pyparsing==3.0.9
 pyresparser==1.0.6
 pyrsistent==0.18.1
