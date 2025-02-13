@@ -211,6 +211,7 @@ def run():
     """
     cursor.execute(tablef_sql)
 
+    st.write("Debug: Loaded Sidebar")  # Add this before `choice`
 
 
     ###### CODE FOR CLIENT SIDE (USER) ######
@@ -238,6 +239,7 @@ def run():
         state = statee
         country = countryy
 
+        st.write("Debug: Entered User Section")  # Before the file uploader
 
         # Upload Resume
         st.markdown('''<h5 style='text-align: left; color: #021659;'> Upload Your Resume, And Get Smart Recommendations</h5>''',unsafe_allow_html=True)
