@@ -213,7 +213,6 @@ def run():
 
     st.write("Debug: Loaded Sidebar")  # Add this before `choice`
 
-
     ###### CODE FOR CLIENT SIDE (USER) ######
 
     if choice == 'User':
