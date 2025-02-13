@@ -11,6 +11,7 @@ import psycopg2
 import os
 import getpass
 import socket
+import requests
 import platform
 import geocoder
 import secrets
@@ -222,7 +223,7 @@ def run():
         act_mob  = st.text_input('Mobile Number*')
         sec_token = secrets.token_urlsafe(12)
         host_name = socket.gethostname()
-        ip_add = socket.gethostbyname(host_name)
+        ip_add = requests.get('https://api64.ipify.org?format=json').json()["ip"]
         dev_user = getpass.getuser()
         os_name_ver = platform.system() + " " + platform.release()
         g = geocoder.ip('me')
